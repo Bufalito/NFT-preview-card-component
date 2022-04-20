@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <div class="card">
+      <div class="card-img">
+        <div class="img"> <img class="nft" src="images/image-equilibrium.jpg" alt="">
+          <div class="hover-effect">
+            <img class="view" src="images/icon-view.svg" alt="">
+          </div>
+        </div>
 
-  Equilibrium #3429
 
-  Our Equilibrium collection promotes balance and calm.
+      </div>
+      <div class="card-title">
+        <h1>Equilibrium #3429</h1>
+      </div>
+      <div class="card-desc">
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div class="price">
+        <span class="price-num"> <img src="images/icon-ethereum.svg" alt=""><span class="pl-2"> 0.041 ETH</span></span>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <span class="date"> <img src="images/icon-clock.svg" alt=""> <span class="pl-2"> 3 days left</span></span>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      </div>
+      <hr>
+      <div class="user">
+        <img src="images/image-avatar.png" alt="">
+        <p class="pl-3 "> <span class="Soft-blue">Creation of</span> <span class="white auther">Jules Wyvern</span> </p>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+
+
+
 </body>
+
 </html>

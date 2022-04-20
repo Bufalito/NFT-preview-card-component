@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+.Soft-blue {
+  color: var(--Soft-blue);
+}
+.white {
+  color: var(--White);
+}
+body {
+  background-color: var(--Very-dark-blue-mainBG);
+}
+main {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.pl-2 {
+  padding-left: 5px;
+}
+.pl-3 {
+  padding-left: 10px;
+}
+.card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-self: center;
+  background-color: var(--Very-dark-blue-cardBG);
+
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+@media (max-width: 375px) {
+  .card {
+    width: 300px;
+  }
+}
+.card .card-img {
+  height: 350px;
+  transition: all ease 1s;
+}
+
+.card .card-img .nft {
+  width: 100%;
+  border-radius: 10px;
+}
+.card .card-img .img {
+  position: relative;
+  height: 100%;
+  transition: all ease 1s;
+}
+.card .hover-effect {
+  position: absolute;
+
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(178deg 100% 50% / 50%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+.card .card-img:hover .hover-effect {
+  opacity: 1;
+}
+.hover-effect img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.card .card-title {
+  color: var(--White);
+  cursor: pointer;
+}
+.card .card-title:hover,
+.card .user .auther:hover {
+  color: var(--Cyan);
+}
+.card .card-desc {
+  color: var(--Soft-blue);
+  font-size: 18px;
+}
+.card > * {
+  margin: 10px 0;
+}
+.card .price,
+.price-num {
+  display: flex;
+  justify-content: space-between;
+}
+.card .price .price-num {
+  color: var(--Cyan);
+}
+.card .price .date {
+  color: var(--Soft-blue);
+  display: flex;
+  align-items: center;
+}
+.card hr {
+  border: 1px solid var(--Very-dark-blue-line);
+}
+.card .user {
+  display: flex;
+  align-items: center;
+}
+.card .user img {
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+.card .user .auther {
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0;
+  color: var(--White);
+}
+.attribution a {
+  color: var(--Cyan);
+}
